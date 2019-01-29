@@ -1,0 +1,26 @@
+{
+  "name": "jest-issue-7747",
+  "version": "1.0.0",
+  "description": "Reproduce observed Jest bug",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --require ./jest-intellij-stdin-fix.js ./node_modules/jest/bin/jest.js --colors --reporters ./jest-intellij-reporter.js --verbose"
+  },
+  "author": "Phillip Bohnenkamp",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "jest": "^24.0.0",
+    "jest-babel": "^1.0.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "@babel/runtime": "^7.3.1"
+  }
+}
